@@ -18,13 +18,13 @@
       <div class="container">
         <nav class="navbar">
           <ul class="menu">
-            <li><a href="">Главная </a></li>
-            <li><a href="">Наши услуги</a></li>
-            <li><a href="">Как мы работаем </a></li>
-            <li><a href="">Онлайн запись</a></li>
-            <li><a href="">Преимущества</a></li>
-            <li><a href="">Цены</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#top">Главная </a></li>
+            <li><a href="#service">Наши услуги</a></li>
+            <li><a href="#work">Как мы работаем </a></li>
+            <li><a href="#online">Онлайн запись</a></li>
+            <li><a href="#benefits">Преимущества</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
         </nav>
         <ul class="mobil">
@@ -34,7 +34,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="top">
         <video src="./img/bg-video.mp4" autoplay muted loop></video>
         <div class="container">
           <div class="logo">
@@ -48,16 +48,18 @@
               Профессиональный шинный сервис, экспертный подбор дисков и шин
             </p>
             <div class="hero-btn">
-              <button class="btn">Получите бесплатную консультацию</button>
-              <button class="btn btn-white">Запишитесь на сервис</button>
+              <button class="btn" id="firstPopup">
+                Получите бесплатную консультацию
+              </button>
+              <button class="btn btn-white" id="secondPopup">Запишитесь на сервис</button>
             </div>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
-          <div class="service">
-            <h1 class="title">Наши услуги</h1>
+          <div class="service" id="service">
+            <h2 class="title">Наши услуги</h2>
             <div class="service__form">
               <form method="post">
                 <label for="1">
@@ -165,7 +167,7 @@
       <section>
         <div class="container">
           <h1 class="title">Как мы работаем</h1>
-          <div class="work">
+          <div class="work" id="work">
             <div class="work__item">
               <div class="number"><span>1</span></div>
               <div class="work__content">
@@ -228,18 +230,22 @@
       </section>
       <section>
         <div class="container">
-          <div class="calendar">
-            <h1 class="title">Запишитесь на сервис</h1>
+          <div class="calendar" id="online">
+            <h2 class="title">Запишитесь на сервис</h2>
             <p>Оставьте телефон, имя и желаемую дату визита</p>
-            
+
             <div class="calendar__flex">
               <div class="calendar_date">
                 <div class="month">
-                  <button class="prev-btn"><img src="./img/prew.svg" alt=""></button>
-                    <div class="date">
-                      <h2>Сентябрь</h2>
-                    </div>
-                    <button class="next-btn"><img src="./img/newt.svg" alt=""></button>
+                  <button class="prev-btn">
+                    <img src="./img/prew.svg" alt="" />
+                  </button>
+                  <div class="date">
+                    <h2>Сентябрь</h2>
+                  </div>
+                  <button class="next-btn">
+                    <img src="./img/newt.svg" alt="" />
+                  </button>
                 </div>
                 <div class="weekdays">
                   <div>вс</div>
@@ -252,12 +258,389 @@
                 </div>
                 <div class="days"></div>
               </div>
+              <div class="time___flex">
+                <div><span>9:00</span></div>
+                <div><span>9:30</span></div>
+                <div><span>10:00</span></div>
+                <div><span>10:30</span></div>
+                <div><span>11:00</span></div>
+                <div><span>11:30</span></div>
+                <div><span>12:00</span></div>
+                <div><span>12:30 </span></div>
+                <div><span>13:00 </span></div>
+                <div><span>13:30</span></div>
+                <div><span>14:00</span></div>
+                <div><span>14:30</span></div>
+                <div><span>15:00</span></div>
+                <div><span>15:30</span></div>
+                <div><span>16:00</span></div>
+                <div><span>16:30</span></div>
+                <div><span>17:00</span></div>
+                <div><span>17:30</span></div>
+                <div><span>18:00</span></div>
+                <div><span>18:30</span></div>
+                <div><span>19:00</span></div>
+                <div><span>19:30</span></div>
+              </div>
+              <input type="text" placeholder="Ваше имя:" />
+              <div class="input-time">
+                <label>Желаемая дата визита:</label>
+                <input
+                  type="text"
+                  value="17.12.2021"
+                  disabled="true"
+                  id="dateSelect"
+                />
+              </div>
+              <input type="tel" placeholder="Телефон:" />
+              <div class="input-time">
+                <label>Желаемое время визита:</label>
+                <input
+                  type="text"
+                  value="13:00"
+                  disabled="true"
+                  id="timeSelect"
+                />
+              </div>
+              <textarea name="" id="" placeholder="Пожелания"></textarea>
+              <div class="info-date">
+                <p>Адрес ул. Николая Гринченко 2/1</p>
+                <button class="btn">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="benefits" id="benefits">
+            <h2 class="title">6 преимуществ нашего сервиса</h2>
+            <div class="benefits__flex">
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/041-customer-service-1.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Команда профессионалов</h3>
+                  <p>
+                    Команда профессионалов, любящие свое дело, с многолетним
+                    опытом работы
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/098-wheel.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Заказ от 1-й шины</h3>
+                  <p>
+                    Продаём шины и диски от 1 штуки по необходимости. Новые
+                    оригинальные диски и шины из Германии и б/у в идеальном
+                    состоянии, комплекты в сборе с шинами
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/069-repair-4.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Новое немецкое оборудование</h3>
+                  <p>
+                    Работаем только с современным сертифицированным европейским
+                    оборудованием Hofmann соответствующим всем стандартам,
+                    выполняем самые сложные задачи
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/027-car-service.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Гарантия на материалы</h3>
+                  <p>
+                    Используем только оригинальные комплектующие для установки
+                    колес, а также качественные немецкие расходные материалы
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/085-speedometer.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Быстрая доставка шин и дисков</h3>
+                  <p>
+                    Осуществляем доставку по Киеву в течение 12 часов, по
+                    Украине за 24-48 часов
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__item">
+                <div class="benifits__img">
+                  <img src="./img/010-document.svg" alt="" />
+                </div>
+                <div class="benefits__content">
+                  <h3>Удобная система оплаты</h3>
+                  <p>
+                    Комфорт клиентов – наш приоритет. Для Вашего удобства
+                    существует гибкая система оплаты: можете рассчитаться как
+                    наличными, так и банковской картой или провести оплату по
+                    безналичному расчету.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="file" id="price">
+            <div class="file__flex">
+              <h2 class="title">
+                Стоимость услуг шиномонтажа и покраски дисков
+              </h2>
+              <a href="" class="btn">Ознакомиться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="online">
+            <h2 class="title">Онлайн покупка шин</h2>
+            <form action="" method="post">
+              <input type="text" placeholder="Марка и модель авто:" />
+              <div class="select__online">
+                <label>Количество шин:</label>
+                <select name="" id="" placeholder="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="select__wheels">
+                <label>Размер шин</label>
+                <select name="" id="">
+                  <option value="275">275</option>
+                </select>
+                <select name="" id="">
+                  <option value="35">35</option>
+                </select>
+                <select name="" id="">
+                  <option value="R21">R21</option>
+                </select>
+                <div class="cheack">
+                  <div class="cheack__img">
+                    <img src="./img/galochka.svg" alt="" />
+                  </div>
+                  <p>Разноширокая (задние)</p>
+                </div>
+                <div class="select__wheels-behind">
+                  <select name="" id="">
+                    <option value="275">275</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="35">35</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="R21">R21</option>
+                  </select>
+                </div>
+              </div>
+              <div class="select__online">
+                <label>Сезон:</label>
+                <select name="" id="" placeholder="">
+                  <option value="Зима">Зима</option>
+                  <option value="Весна">Весна</option>
+                  <option value="Демисезонные">Демисезонные</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Ваше имя:" />
+              <input type="tel" placeholder="Телефон:" />
+              <button class="btn" type="submit">Рассчитать стоимость</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="brand" id="brand">
+            <h2 class="title">Бренды автомобилей, с которыми мы работаем</h2>
+            <div class="brand__flex">
+              <div class="brand__item">
+                <img src="./img/Mercedes_benz_silver.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/BMWlogo.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/Audi_Logo_History.gif" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/Porsche_Logosvg.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/bently.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/rang.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/volkswagen-emblem-2014-1920x1080.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/autowpru_vorsteiner_.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/amg.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/bbs.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/brixton-logo-final.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/1024pxBrabus_logosvg.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/1200px-Tesla_Motors.svg.png" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/rols.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/maserati.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/lamba.webp" alt="" />
+              </div>
+              <div class="brand__item">
+                <img src="./img/jaguar.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="help">
+            <h2 class="title">
+              Получите бесплатную консультацию по подбору шин для Вашего авто
+            </h2>
+            <p>
+              Мы свяжемся с Вами в течение 20 минут, чтобы уточнить детали В
+              зависимости от индивидуальных пожеланий мы предложим несколько
+              вариантов шин для Вашей машины на выбор
+            </p>
+            <form action="" method="post">
+              <input type="text" placeholder="Ваше имя:" />
+              <input type="text" placeholder="Ваш телефон: " />
+              <button class="btn">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="info" id="contact">
+            <div class="info__flex">
+              <div class="contact__info">
+                <h4>Киев, ул. Николая Гринченко 2/1</h4>
+                <a href="tel:+380931702919">+38 (093) 170-29-19</a>
+                <a href="tel:+380962024420">+38 (096) 202-44-20</a>
+                <a href="mailto:info@german-wheels.com.ua"
+                  >info@german-wheels.com.ua</a
+                >
+                <div class="service___info">
+                  <a
+                    href="https://www.google.com/maps/dir/49.4429807,26.988556/%D1%83%D0%BB.+%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F+%D0%93%D1%80%D0%B8%D0%BD%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,+2%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@49.4428515,26.9890217,21z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x40d4cee01a9b5605:0x5bb95e56124292c0!2m2!1d30.506753!2d50.4249267"
+                    >Смотреть на Google Maps
+                  </a>
+                  <a href="">Политика конфиденциальности </a>
+                </div>
+              </div>
+              <div id="map"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer___top">
+        <div class="container">
+          <div class="footer__logo">
+            <img src="./img/logoBlack.svg" alt="" />
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="#top">Главная</a></li>
+              <li><a href="#services">Наши услуги</a></li>
+              <li><a href="#work">Как мы работаем </a></li>
+              <li><a href="#benefits">Преимущества</a></li>
+              <li><a href="#online">Онлайн запись</a></li>
+              <li><a href="#brand">Бренды</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <a
+            href="https://www.google.com/maps/dir/49.4429807,26.988556/%D1%83%D0%BB.+%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F+%D0%93%D1%80%D0%B8%D0%BD%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,+2%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@49.4428515,26.9890217,21z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x40d4cee01a9b5605:0x5bb95e56124292c0!2m2!1d30.506753!2d50.4249267"
+            >Смотреть на Google Maps</a
+          >
+          <a href="">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <div class="popup__first popup">
+      <div class="popup__close"><img src="./img/close.svg" alt="" /></div>
+      <div class="popup___flex">
+        <h3 class="title">Получите бесплатную консультацию</h3>
+        <p>
+          Специалист компании German Wheels свяжется с Вами в течение 30 минут
+          и ответит на Ваши вопросы!
+        </p>
+        <form action="">
+          <input type="text" placeholder="Ваше имя:" />
+          <input type="tel" placeholder="Телефон:" />
+          <button class="btn">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup__second popup">
+      <div class="popup__close"><img src="./img/close.svg" alt="" /></div>
+      <div class="popup___flex">
+        <h3 class="title">
+          Запишитесь на сервис Оставьте телефон, имя и желаемую дату визита
+        </h3>
+        <p>
+          Специалист компании German Wheels свяжется с Вами в течение 30 минут
+          и ответит на Ваши вопросы!
+        </p>
+        <form action="">
+          <input type="text" placeholder="Ваше имя:" />
+          <input type="tel" placeholder="Телефон:" />
+          <label>
+            <p>Желаемая дата визита:</p>
+            <input type="datetime-local">
+          </label>
+          <button class="btn">Записаться</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUBWoEYZEnJEXVem_iQ1CvvVWPi-fV0b4&callback=initMap&v=weekly"
+      async
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
