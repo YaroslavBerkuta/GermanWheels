@@ -132,9 +132,8 @@ cheack.addEventListener("click", () => {
 let map;
 
 
-
 function initMap() {
-  const myLatLng = { lat: 49.44298119994354, lng: 26.988555019877083 };
+  const myLatLng = { lat: 50.42506592850202, lng: 30.50686357493421 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     mapId: "f6a4b25e969da642",

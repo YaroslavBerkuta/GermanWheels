@@ -615,47 +615,46 @@ a {
   display: none;
   margin-top: 60px;
 }
+.bg-section {
+  background: url(./img/bgsection.png) center center no-repeat;
+  padding-top: 80px;
+}
+.bg-section .title {
+  color: #fff;
+  margin-bottom: 64px;
+}
 .work {
-  padding-top: 36px;
-  max-width: 480px;
-  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .work__item {
+  flex: 0 0 25%;
+  padding: 0 32px;
   display: flex;
   align-items: center;
+  background: #ffffff;
+  box-shadow: 4px 4px 16px rgba(39, 92, 141, 0.1);
+  border-radius: 8px;
   margin-bottom: 60px;
+  position: relative;
+  height: 174px;
 }
 .work__item .number {
-  position: relative;
-  flex: 0 0 32px;
-  margin-right: 36px;
-  height: 32px;
-  background: #faca30;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-.work__item .number:after {
-  content: "";
   position: absolute;
-  width: 1px;
-  height: 150px;
-  z-index: -1;
-  background: #faca30;
-  top: 80px;
-  left: 50%;
-  transform: translate(0, -50%);
+  right: 0;
+  bottom: -10%;
 }
-.work__item:last-child .number::after {
-  display: none;
-}
+
 .work__item .number span {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 96px;
   line-height: 120%;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: rgba(217, 226, 233, 0.7);
 }
 .work__content p {
   font-weight: 500;
@@ -1270,7 +1269,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.popup form input{
+.popup form input {
   width: 100%;
   background: #f0f5f9;
   border-radius: 8px;
@@ -1286,24 +1285,24 @@ a {
   line-height: 120%;
   color: #9297ab;
 }
-.popup__close{
+.popup__close {
   cursor: pointer;
   position: absolute;
   top: 3%;
   right: 3%;
 }
-.popup__first{
+.popup__first {
   display: none;
 }
-.popup__first.active{
+.popup__first.active {
   display: block;
 }
-.popup__second{
-display: none;
+.popup__second {
+  display: none;
 }
-.popup__second.active{
+.popup__second.active {
   display: block;
-  }
+}
 .popup form label {
   width: 100%;
   margin-bottom: 20px;
@@ -1314,10 +1313,10 @@ display: none;
   align-items: center;
   padding: 18px;
 }
-.popup form label p{
+.popup form label p {
   margin: 0;
 }
-.popup form label input{
+.popup form label input {
   outline: none;
   width: 40%;
 }
