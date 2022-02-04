@@ -7,7 +7,16 @@ serviceLabel.forEach((item) => {
     item.classList.toggle("active");
   });
 });
-
+const burger = document.querySelector(".menu__burger")
+const menu = document.querySelector(".mobill__wrapper")
+burger.addEventListener("click", () => {
+  menu.classList.toggle("active")
+})
+menu.querySelectorAll(".menu li").forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("active")
+  })
+})
 openMain.addEventListener("click", () => {
   mainData.classList.add("active");
   openMain.style.display = "none";

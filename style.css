@@ -381,6 +381,11 @@ a {
   background: rgba(10, 10, 10, 0.8);
   box-shadow: 4px 4px 16px rgba(39, 92, 141, 0.1);
 }
+.header .mobill__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -393,6 +398,9 @@ a {
 }
 .menu li {
   margin-right: 24px;
+}
+.header__logo {
+  display: none;
 }
 .menu li a {
   font-weight: bold;
@@ -1238,6 +1246,7 @@ a {
   transform: translate(-50%, -50%);
   box-shadow: 4px 4px 16px rgba(39, 92, 141, 0.1);
   border-radius: 8.77359px;
+  z-index: 999;
 }
 .popup h3 {
   max-width: 575px;
@@ -1319,4 +1328,446 @@ a {
 .popup form label input {
   outline: none;
   width: 40%;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 85%;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .btn {
+    font-size: 17px;
+  }
+  .hero-btn {
+    justify-content: space-between;
+  }
+  .service {
+    padding: 40px;
+  }
+  .time___flex {
+    max-width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .logo img {
+    max-width: 200px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 17px;
+  }
+  .btn {
+    padding: 18px 20px;
+  }
+  .service__form form label {
+    padding: 15px;
+  }
+  .service__form form label p {
+    font-size: 20px;
+  }
+  #sendMain {
+    margin-top: 30px;
+  }
+  .days div {
+    flex: 0 0 40px;
+    height: 40px;
+  }
+  .weekdays div {
+    padding: 0 15px;
+  }
+  .calendar_date {
+    max-width: 343px;
+    padding: 20px 28px;
+  }
+  .time___flex {
+    padding: 30px;
+    max-width: 45%;
+    justify-content: space-between;
+  }
+  .time___flex div {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .input-time label {
+    font-size: 15px;
+  }
+  .benefits__content p {
+    font-size: 15px;
+  }
+  .benefits__content h3 {
+    font-size: 18px;
+  }
+  .benifits__img img {
+    width: 45px;
+    height: 45px;
+  }
+  .benefits {
+    padding: 128px 65px 89px 65px;
+  }
+  .file__flex .title {
+    font-size: 35px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .brand__item {
+    flex: 0 0 15%;
+  }
+  .help form input {
+    flex: 0 0 30%;
+  }
+  .contact__info h4,
+  a {
+    font-size: 23px;
+  }
+  #map {
+    width: 550px;
+    height: 550px;
+  }
+  .service__form .btn {
+    margin-top: 45px;
+  }
+  .menu__burger {
+    margin-left: auto;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu__burger span {
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+  }
+  .menu__burger span:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  .mobill__wrapper {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 76px;
+    left: 0;
+    background: #0a0a0a;
+    box-shadow: 4px 4px 16px rgba(39, 92, 141, 0.1);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s linear;
+  }
+  .mobill__wrapper.active {
+    transform: translateX(0);
+  }
+  .header__logo {
+    display: block;
+  }
+  .header__logo img {
+    max-width: 110px;
+  }
+  .header .mobill__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 18px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu li a {
+    font-size: 35px;
+  }
+  .menu li {
+    margin-bottom: 25px;
+  }
+  .mobil li a {
+    font-size: 30px;
+  }
+  .logo {
+    display: none;
+  }
+  .hero-btn {
+    margin-top: 60px;
+  }
+  .hero-btn .btn {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+  .hero-btn {
+    flex-direction: column;
+  }
+  .hero-content p {
+    font-size: 15px;
+  }
+  .work__content p {
+    font-size: 14px;
+  }
+  .hero-btn .btn:first-child {
+    margin-right: 0;
+  }
+  .popup p {
+    font-size: 14px;
+  }
+  .popup {
+    padding-top: 18px;
+  }
+  .service__form .btn {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .popup h3 {
+    font-size: 24px;
+  }
+  .calendar_date {
+    max-width: 320px;
+  }
+  .time___flex {
+    padding: 20px;
+  }
+  .info-date p {
+    font-size: 19px;
+  }
+  .help form input {
+    flex: 0 0 40%;
+    margin-bottom: 20px;
+  }
+  .help form {
+    align-items: center;
+    justify-content: center;
+  }
+  #map {
+    width: 450px;
+    height: 450px;
+  }
+  .service___info a {
+    font-size: 18px;
+  }
+  .footer__logo img {
+    max-width: 160px;
+  }
+  .footer___top ul li a {
+    font-size: 14px;
+  }
+  .help h2 {
+    font-size: 30px;
+  }
+  .file__flex .title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0;
+  }
+  .popup {
+    width: 60%;
+  }
+  .service__form form label img {
+    width: 60px;
+    height: 60px;
+  }
+  .service__form form label p {
+    font-size: 14px;
+  }
+  .service__form form label {
+    height: 145px;
+    padding: 10px;
+  }
+  .work__item {
+    flex: 0 0 35%;
+  }
+  .calendar_date {
+    max-width: 343px;
+    padding: 30px 92px;
+  }
+  .time___flex {
+    max-width: 83%;
+    margin-bottom: 30px;
+  }
+  .calendar__flex {
+    justify-content: center;
+  }
+  .calendar__flex input {
+    flex: 0 0 100%;
+  }
+  .input-time {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  .input-time input {
+    flex: 0 0 auto;
+  }
+  .calendar__flex textarea {
+    flex: 0 0 100%;
+  }
+  .info-date {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .help form {
+    width: 100%;
+  }
+  .help form input {
+    flex: 0 0 100%;
+  }
+  .help form .btn {
+    display: block;
+    width: 100%;
+  }
+  .info__flex {
+    flex-direction: column;
+  }
+  .contact__info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact__info h4,
+  a {
+    width: 100%;
+  }
+  .service___info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #map {
+    width: 100%;
+  }
+  .footer__bottom a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .calendar_date {
+    padding: 30px 0;
+    border: none;
+  }
+  .calendar {
+    padding: 0;
+  }
+  .time___flex {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+  .calendar__flex input {
+    flex: 0 0 85%;
+  }
+  .input-time {
+    flex: 0 0 85%;
+    margin-bottom: 30px;
+  }
+  .input-time input {
+    flex: 0 0 auto;
+  }
+  .calendar__flex textarea {
+    flex: 0 0 85%;
+  }
+  .info-date {
+    flex: 0 0 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .benefits {
+    padding: 128px 25px 89px 25px;
+  }
+  .file__flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .file {
+    padding: 100px 30px;
+  }
+  .file__flex .btn {
+    justify-content: center;
+  }
+  .file__flex .title{
+    text-align: center;
+  }
+  .select__wheels label{
+    width: 100%;
+  }
+  .select__wheels select{
+    width: 95%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .cheack{
+    margin-left: 0;
+  }
+  .select__wheels-behind{
+    flex-direction: column;
+  }
+  .select__wheels-behind select{
+    width: 95%;
+    margin:15px 0;
+  }
+  .online form .btn{
+    margin: 0;
+    justify-content: center;
+  }
+  .title{
+    font-size: 28px;
+  }
+  .help h2{
+    font-size: 25px;
+  }
+  .help p{
+    font-size: 16px;
+  }
+  .work__item{
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  .footer__bottom a{
+    font-size: 10px;
+  }
+  .service__form form label{
+    flex: 0 0 100%;
+  }
+  .btn{
+    font-size: 11px;
+  }
+  .hero{
+    padding: 0;
+    height: 100vh;
+  }
+  .hero video{
+    height: 100%;
+    object-fit: cover;
+  }
+  .main__data label{
+    max-width: 90%;
+    flex: 0 0 100%;
+  }
+  .menu li a{
+    font-size: 25px;
+  }
 }
